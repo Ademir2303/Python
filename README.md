@@ -1,2 +1,2 @@
 # Python
-.Python projects for learning and practice.
+Python projects for learning and practice.
