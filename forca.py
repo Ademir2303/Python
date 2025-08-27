@@ -32,7 +32,7 @@ def game():
     while chances> 0 :
         print(" ".join(letras_descobertas))
         print(f"\nChances restantes:", chances)
-        print(f"Letras erradas:" " ".join(letras_erradas))
+        print(f"Letras erradas:\n" " ".join(letras_erradas))
 
         #tentativas
         tentativa = input('\nDigite uma letra: ').lower()
