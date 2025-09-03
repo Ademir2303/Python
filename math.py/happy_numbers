@@ -1,0 +1,43 @@
+#Para ser feliz fazer função para guardar os valores dos quadrados de forma repetida ate chegar em 1.
+#Se repetir infinitamente e não chegar em 1 ele não será feliz
+
+# função para realizar a soma dos quadrados
+def soma_dos_quadrados(n):
+    return sum(int(digito) ** 2 for digito in str(n))
+
+def eh_feliz(numero):
+    visitado = set()
+    print(f"\nVerificando se {numero} é um numero feliz ou não: ")
+
+    # loop para continuar enquanto o numero não for 1 e não for repetido 
+    while numero != 1 and numero not in visitado:
+        visitado.add(numero)
+        soma = soma_dos_quadrados(numero)
+        print(f"{numero} soma do quadrado dos digitos = {soma}")
+        numero = soma
+
+    # Explicando sobre as condições.
+    if numero == 1:
+        print(f"Caso o valor chegue a 1, ele será um numero feliz.\n")
+        return True
+    else:
+        print(f"NÃO é um numero feliz considerado um numero feliz.\n")
+        return False
+
+# Função para interação        
+def main():
+    while True:
+        entrada = input('Digite um numero inteiro positivo (ou digite "sair" para encerrar):\n')
+        
+        if entrada.lower() == "sair":
+            print("\nEncerrando. Até mais!")
+            break
+
+        elif not entrada.isdigit() or int(entrada) <= 0:
+            print("Por favor, digite um numero inteiro e positivo válido.")
+            continue
+
+        numero = int(entrada)
+        eh_feliz(numero)
+
+main()
