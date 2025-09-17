@@ -18,10 +18,10 @@ def eh_feliz(numero):
 
     # Explicando sobre as condições.
     if numero == 1:
-        print(f"Caso o valor chegue a 1, ele será um numero feliz.\n")
+        print(f"O numero {numero} é um numero feliz .\n")
         return True
     else:
-        print(f"NÃO é um numero feliz considerado um numero feliz.\n")
+        print(f"O numero {numero} NÃO é um numero feliz considerado um numero feliz.\n")
         return False
 
 # Função para interação        
@@ -39,5 +39,4 @@ def main():
 
         numero = int(entrada)
         eh_feliz(numero)
-
 main()
