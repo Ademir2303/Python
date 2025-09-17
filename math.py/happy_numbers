@@ -1,4 +1,4 @@
-#Para ser feliz fazer função para guardar os valores dos quadrados de forma repetida ate chegar em 1.
+#Para um numero ser feliz deve se fazer função para guardar os valores dos quadrados de forma repetida ate chegar em 1.
 #Se repetir infinitamente e não chegar em 1 ele não será feliz
 
 # função para realizar a soma dos quadrados
